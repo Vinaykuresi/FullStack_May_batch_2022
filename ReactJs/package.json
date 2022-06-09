@@ -1,0 +1,14 @@
+{
+  "name": "dmo",
+  "version": "1.0.0",
+  "description": "Giving demo to students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vinay kuresi",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^5.0.1"
+  }
+}

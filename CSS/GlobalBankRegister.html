@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <title>Login Page</title>
+    <meta charset="UTF-8"> 
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <td width="800px" height="162px">
+                <h2>SBI Bank</h2>
+            </td>
+        </tr><br/><br/>
+    </table>
+    <table align="center">
+        <tr>
+            <td>
+                <p>New User Account Creation Form!</p>
+            </td>
+        </tr>
+    </table><br />
+    <table border="4 solid" align="center" bordercolor="#8598CC">
+        <tr>
+            <td>
+                <h3 align="center">Account creation form</h3>
+                <form name="signupForm" action="GlobalBankSuccess.html" class="form_css">
+                    <table cellpadding="5" align=center>
+                        <tr>
+                            <td align="right">First Name</td>
+                            <td><input type="text" name="fname" required /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Last Name</td>
+                            <td><input type="text" name="lname" required /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Address</td>
+                            <td><textarea type="textarea" name="address" cols="2" rows="2" required>
+                            </textarea></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Contact No</td>
+                            <td><input type="number" name="contactNo" required /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Gender </td>
+                            <td><input type="radio" name="gender" value="Male" />Male
+                                <input type="radio" name="gender" value="Female" />Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Account Type</td>
+                            <td align="left">
+                                <select name="accountType">
+                                    <option value="#">--Select--</option>
+                                    <option value="Savings">Savings</option>
+                                    <option value="Current">Current</option>
+                                    <option value="Fixed">Fixed</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Minimum Balance</td>
+                            <td><input type="number" min="1000" value="1000" name="balance" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="submit" value="Submit" /></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table align="center">
+        <tr>
+            <td>
+                <p>Visit Home Page after account creation</p>
+            </td>
+        </tr>
+    </table>
+    <table border="1" align="center">
+        <tr>
+            <td width="800px" height="30px">
+                <footer>
+                    <h2>&copy; SBI Bank</h2>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

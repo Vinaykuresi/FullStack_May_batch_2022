@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        div{
+            background-color: aqua;
+            color: black;
+            font-style: italic;
+            font-weight: 800;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="personDetails">
+        <p id="person"></p>
+        <!-- <p>Vinay</p>
+        <p>Mounica</p>
+        <p>Uday</p>
+        <p>Basheer</p>
+        <p>Suresh</p> -->
+    </div>
+
+    <script>
+        var text = "";
+        var person_details = ["Vinay", "Mounica", "Uday", "Basheer", "Suresh", "Babu", "Vinay", "Mounica", "Uday", "Basheer", "Suresh", "Babu"]
+        person_details.forEach(addPersons);
+        document.getElementById("person").innerHTML = text;
+        function addPersons(personName, index){
+            text += index+1 + " " + personName + "<br/>" 
+        }
+    </script>
+</body>
+
+</html>

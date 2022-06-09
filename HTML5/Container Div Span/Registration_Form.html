@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Special Input Types Demo</title>
+</head>
+<body>
+    <h3>
+        <center>Customer Registration</center>
+    </h3>
+    <br><br>
+    <center>
+        <form name="custForm" action="finalPage.html" method="post">
+        
+            <div>
+                <label for="username">Username : </label>
+                <input type="text" name="username" autofocus="autofocus" required="required" maxlength="20"/><br><br><!-- focus is here when page is loaded) -->
+            </div>
+
+            <div>
+                <label for="password">Password : </label>
+                <input type="password" name="password" autofocus="autofocus" required="required" maxlength="12"/><br><br><!-- focus is here when page is loaded) -->
+            </div>
+
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" name="email"  required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="20"/><br><br><!-- focus is here when page is loaded) -->
+            </div>
+
+            <div>
+                <label for="gender">Gender : </label>
+                <input type="radio" name="gender" value="male" required="required">Male</input><!-- focus is here when page is loaded) -->
+                <input type="radio" name="gender" value="male" required="required">Female</input><br><br>
+            </div>
+
+            <div>
+                <label for="dropDown">Age : </label>
+                <select id="dropDown">
+                    <option><30</option>
+                    <option>>30</option>
+                    <option><60 and >30</option>
+                </select><br><br>
+            </div>
+
+            <div>
+                <label for="Address : ">Address : </label>
+                <textarea rows="4" cols="20" maxlength="100"></textarea><br><br>
+            </div>
+
+            <button type="submit" autofocus="autofocus">Submit</button>&nbsp
+            <button type="reset">Reset</button>
+
+        </form>
+    </center>
+</body>
+
+</html>

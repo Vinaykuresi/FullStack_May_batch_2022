@@ -1,0 +1,215 @@
+
+var car_details = {}
+undefined
+car_details = {
+    name : "Innova",
+    cost : 3000000,
+    model : "GTS"
+}
+{name: 'Innova', cost: 3000000, model: 'GTS'}
+car_details
+{name: 'Innova', cost: 3000000, model: 'GTS'}
+car_name
+'Innova'
+car_details.model
+'GTS'
+car_details.cost
+3000000
+
+
+
+var car_details = {
+    name:"Innova",
+    price : "3000000",
+    model : "crysta",
+    print : function() {
+        return this.name+" "+this.price+" "+this.model
+    }
+}
+undefined
+car_details.print()
+'Innova 3000000 crysta'
+car_details = {
+    name:"Innova",
+    price : "3000000",
+    model : "crysta",
+    print : function(name, version) {
+        return this.name+" "+this.price+" "+this.model
+    }
+}
+
+car_details.print("fortuner", "VX")
+'Innova 3000000 crysta'
+car_details = {
+    name:"Innova",
+    price : "3000000",
+    model : "crysta",
+    print : function(name, version) {
+        return this.name+" "+this.price+" "+this.version
+    }
+}
+
+car_details.print("fortuner", "VX")
+'Innova 3000000 undefined'
+car_details = {
+    name:"Innova",
+    price : "3000000",
+    model : "crysta",
+    print : function(name, version) {
+        return name+" "+this.price+" "+version
+    }
+}
+
+car_details.print("fortuner", "VX")
+'fortuner 3000000 VX'
+car_details = {
+    name:"Innova",
+    price : "3000000",
+    model : "crysta",
+    print : function(name, version) {
+        console.log(this)
+        return name+" "+this.price+" "+version
+    }
+}
+
+car_details.print("fortuner", "VX")
+VM1151:6 {name: 'Innova', price: '3000000', model: 'crysta', print: ƒ}model: "crysta"name: "Innova"price: "3000000"print: ƒ (name, version)[[Prototype]]: Object
+'fortuner 3000000 VX'
+car_details['price']
+'3000000'
+function bike_detail(name, price, model){
+    this.name = name;
+}
+undefined
+car_details
+{name: 'Innova', price: '3000000', model: 'crysta', print: ƒ}
+car_details.name = "Sonet"
+'Sonet'
+car_details
+{name: 'Sonet', price: '3000000', model: 'crysta', print: ƒ}model: "crysta"name: "Sonet"price: "3000000"print: ƒ (name, version)[[Prototype]]: Object
+function bike_detail(name, price, model){
+    this.name = name;
+    this.price = price;
+    this.model = model;
+
+    this.print = function(){
+        console.log(this)
+        return this.name+" "+this.price+" "+this.model
+    }
+}
+
+var car_details = new car_details("Innova", "3000000", "Crysta");
+
+var pulsar_bike = new bike_detail("Pulsar", "100000", "220");
+undefined
+pulsar_bike
+bike_detail {name: 'Pulsar', price: '100000', model: '220', print: ƒ}model: "220"name: "Pulsar"price: "100000"print: ƒ ()[[Prototype]]: Object
+pulsar_bike.name
+'Pulsar'
+pulsar_bike.print()
+VM2286:7 bike_detail {name: 'Pulsar', price: '100000', model: '220', print: ƒ}model: "220"name: "Pulsar"price: "100000"print: ƒ ()arguments: nullcaller: nulllength: 0name: ""prototype: {constructor: ƒ}[[FunctionLocation]]: VM2286:6[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1][[Prototype]]: Object
+'Pulsar 100000 220'
+var fz_bike = new bike_detail("FZ", "80000", "2020");
+undefined
+fz_bike
+bike_detail {name: 'FZ', price: '80000', model: '2020', print: ƒ}model: "2020"name: "FZ"price: "80000"print: ƒ ()arguments: nullcaller: nulllength: 0name: ""prototype: {constructor: ƒ}[[FunctionLocation]]: VM2286:6[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1][[Prototype]]: Object
+fz_bike.name = "FZS"
+'FZS'
+fz_bike
+bike_detail {name: 'FZS', price: '80000', model: '2020', print: ƒ}
+
+
+// Strings : 
+
+var name = "Vinay"
+undefined
+name.length
+5
+// methods
+undefined
+name.charAt(3)
+'a'
+name.concat(" Kumar")
+'Vinay Kumar'
+name.indexOf("a")
+3
+name.match("Vin")
+['Vin', index: 0, input: 'Vinay', groups: undefined]0: "Vin"groups: undefinedindex: 0input: "Vinay"length: 1[[Prototype]]: Array(0)
+name.replace("ay", "od")
+'Vinod'
+name.search("ay")
+3
+name.search("y")
+4
+name.split("a")
+(2) ['Vin', 'y']0: "Vin"1: "y"length: 2[[Prototype]]: Array(0)
+name.slice(2)
+'nay'
+name.substring("2")
+'nay'
+name.substring(-2)
+'Vinay'
+name.substring(2,4)
+'na'
+name.substring(2,3)
+'n'
+name
+'Vinay'
+name.toLocaleLowerCase
+ƒ toLocaleLowerCase() { [native code] }
+name.toLocaleLowerCase()
+'vinay'
+name.toUpperCase()
+'VINAY'
+
+// Regular Expressions : 
+
+var regex = new RegExp():
+// [abc], [0-9], [a|b], [^abc], [abc$]
+VM2563:1 Uncaught SyntaxError: Unexpected token ':'
+str = "Tech93"
+'Tech93'
+regex = new RegExp("^Tech")
+/^Tech/
+regex.test(str)
+true
+regex = new RegExp("^mTech")
+/^mTech/
+regex.test(str)
+false
+regex = new RegExp("^[Tech|mTech]")
+/^[Tech|mTech]/
+regex.test(str)
+true
+regex = new RegExp("[2-9]")
+/[2-9]/
+regex.test(str)
+true
+regex = new RegExp("[2-4]")
+/[2-4]/
+regex.test(str)
+true
+regex = new RegExp("[0-2]")
+/[0-2]/
+regex.test(str)
+false
+regex.test("3"$)
+VM3233:1 Uncaught SyntaxError: missing ) after argument list
+regex.test("3$")
+false
+regex = new RegExp("3"$)
+VM3301:1 Uncaught SyntaxError: missing ) after argument list
+regex = new RegExp("3$")
+/3$/
+regex.test(str)
+true
+regex = new RegExp("9$")
+/9$/
+regex.test(str)
+false
+
+
+
+
+
+

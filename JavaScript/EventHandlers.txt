@@ -1,0 +1,17 @@
+keypress	onKeyPress
+keyup		onKeyUp
+load		onload
+change 		onChannge
+
+onLoad : 
+
+image load -> 
+	onload event called -> 
+		loadScript Function called -> 
+			text loaded into P tag.
+
+
+
+
+
+

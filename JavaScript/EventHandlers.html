@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <input id="sample" type="text" onkeyup="popUp()"/>
+        <iframe id="myFrame" src="./Public/onLoad.PNG"></iframe>
+        <p id="onLoad"></p>
+        <p id="displayFruit"></p>
+        <select id="select" onchange="selectedFruit()">
+            <option value="Grapes">apes</option>
+            <option value="Orange">Orange</option>
+            <option value="Apples">Apples</option>
+        </select>
+        <script>
+            document.getElementById("myFrame").addEventListener("load", loadScript);
+            function loadScript(){
+                document.getElementById("onLoad").innerHTML = "On Loading Populated"
+            }
+            function popUp(){
+                alert("You are pressing key")
+            }
+
+            function selectedFruit(){
+                var fruit = document.getElementById("select").value;
+                document.getElementById("displayFruit").innerHTML = "You have selected : " + fruit;
+            }
+        </script>
+    </body>
+</html>
