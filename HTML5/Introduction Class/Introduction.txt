@@ -1,0 +1,11 @@
+HTML : HTML5
+w3c(World wide web consortium).
+
+Browsers : Google Chrome, Mozilla Firefox, Edge, Internet Explore, Safari.
+
+Structure of a Web Application :
+
+1) Client Side(FrontEnd) : end user's machine
+2) Server Side(Backend) : 
+3) Database : 
+
