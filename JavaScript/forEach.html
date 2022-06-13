@@ -26,13 +26,21 @@
     </div>
 
     <script>
+        console.log("Insode Script")
+        var user_details = JSON.parse('{"name":"Vinay","password":"123","phone_number":"2135345324","email":"VinayKuresi@gmail.com"}')
+        // console.log(user_details.name)
         var text = "";
-        var person_details = ["Vinay", "Mounica", "Uday", "Basheer", "Suresh", "Babu", "Vinay", "Mounica", "Uday", "Basheer", "Suresh", "Babu"]
-        person_details.forEach(addPersons);
+        // var person_details = ["Vinay", "Mounica", "Uday", "Basheer", "Suresh", "Babu", "Vinay", "Mounica", "Uday", "Basheer", "Suresh", "Babu"]
+        Object.keys(user_details).map(addPersons);
         document.getElementById("person").innerHTML = text;
-        function addPersons(personName, index){
-            text += index+1 + " " + personName + "<br/>" 
+        function addPersons(personDetails){
+            console.log(personDetails)
+            // text += index+1 + " " + personName + "<br/>" 
+            text += personDetails + " : " + user_details[personDetails] + "<br/>" 
         }
+
+        document.getElementById("person").setAttribute("class", "para");
+        localStorage.setItem("")
     </script>
 </body>
 

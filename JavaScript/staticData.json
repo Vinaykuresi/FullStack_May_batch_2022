@@ -1,0 +1,22 @@
+{
+    "pseronsDetials" : [
+        {
+            "name": "Vinay",
+            "password": "123",
+            "phone_number": "2135345324",
+            "email": "VinayKuresi@gmail.com"
+        },
+        {
+            "name": "Geetha",
+            "password": "1#@3",
+            "phone_number": "2135345324",
+            "email": "GeethaKuresi@gmail.com"
+        },
+        {
+            "name": "Suresh",
+            "password": "123453",
+            "phone_number": "2135345324",
+            "email": "Suresh@gmail.com"
+        }
+    ]
+}

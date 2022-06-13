@@ -1,0 +1,107 @@
+css -> cascading style sheet 
+content -> presentation
+
+syntax :
+    property : value
+
+example :
+    color : green
+
+syntax : 
+selector {
+    property : value
+}
+
+ways of specifying the Styling : 
+    1) Inline Styling
+    2) Internal Styling
+    3) External
+    4) Importing stylesheets
+
+    1) Inline Styling : 
+    2) Internal Styling/embedded : 
+    3) External : .css extension, link tag
+
+css3 :
+    1) color
+    2) border
+    3) trasformation
+    4) Box model
+    5) animation
+    6) MediaQuery
+    7) selectors
+    8) background
+
+css properties :
+    1) color : #RRGGBB(red, green, blue) 
+       example : #h1{
+        color : #FF00FF
+       }
+
+    2) Text-align -> left | right | center | Justify
+        P {
+            text-align : center
+        }
+
+    3) text-decoration
+        P {
+            text-decoration : underline
+        }
+
+    4) font-size : px or em values
+        P {
+            font-size : 15px;
+        }
+
+    5) font-style : 
+        P {
+            font-style : italic;
+        }
+
+    6) background-color : 
+        div {
+            background-color : blue;
+        }
+
+    7) background-image : 
+        div {
+            background-image : url("imagelication.png");
+        }
+    
+    8) border : 
+        h1 {
+            border : 5px solid red;
+        }
+
+    9) border-radius : 
+        h1 {
+            border-radius : 5px solid red;
+        }
+
+    10) overflow : 
+        div {
+            overflow : auto;
+        }
+
+    11) display : 
+        p{
+            display: inline
+        }
+
+    12) opacity : 
+        div{
+            opacity : 0.5;
+        }
+
+
+Selectors : 
+    1) Element selector : 
+        p{
+            color : red;
+        }
+    2) ID selector : 
+        "#"
+    3) Class Name : 
+        "."
+    4) Inheritance :
+        "inherit"

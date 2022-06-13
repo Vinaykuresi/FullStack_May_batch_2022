@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            div{
+                background-color: aqua;
+                color: black;
+                font-style: italic;
+                font-weight: 800;
+                width: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 20px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="personDetails">
+            <p id="person"></p>
+        </div>
+        <button onclick="makeApi()" type="submit">Click here</button>
+
+        <script>
+            function makeApi(){
+                if(window.ActiveXObject){
+                    // the browser is related to Microsoft ex : edge, internet explorer
+                    XHR = new ActiveXObject("Microsoft.XMLHTTP");
+                }else if(window.XMLHttpRequest){
+                    // the browser is related to other browser : chrome, mozilla
+                    XHR = new XMLHttpRequest();
+                }
+                XHR.onreadystatechange = function(){
+                    var text = "";
+                    if(this.readyState == 4 && this.status == 200){
+                        var person_details = JSON.parse(this.responseText);
+                        // console.log(person_details)
+                        document.getElementById("person").innerHTML = text;
+                        Object.keys(person_details).map(item => {
+                                text += item + " : " + person_details[item] + "<br/>" 
+                            });
+                        // for(let data = 0; data < person_details.length; data++){
+                        //     var each_person = person_details[data]
+                        //     Object.keys(each_person).map(item => {
+                        //         text += item + " : " + each_person[item] + "<br/>" 
+                        //     });
+                        //     text += "<br/>"
+                        // }
+                        document.getElementById("person").innerHTML = text;
+                    }
+                }
+                // XHR.open("GET", "http://localhost:4000/pseronsDetials", true);
+                XHR.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+                XHR.send();
+            }
+        </script>
+    </body>
+</html>

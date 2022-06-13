@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            td {
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <table border="1px solid brown">
+                <tbody>
+                    <tr>
+                        <td style="padding-left: 25%;" colspan="2">
+                            Login Form
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Username
+                        </td>
+                        <td>
+                            <input id="username" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            password
+                        </td>
+                        <td>
+                            <input id="password" type="password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" onclick="saveCredentials()">Submit</button>
+                        </td>
+                        <td>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <script>
+            function saveCredentials(){
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                localStorage.setItem("username",username)
+                localStorage.setItem("password",password)
+            }
+        </script>
+    </body>
+</html>
