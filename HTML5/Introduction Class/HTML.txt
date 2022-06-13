@@ -1,0 +1,94 @@
+HTML : HTML5
+w3c(World wide web consortium).
+
+Browsers : Google Chrome, Mozilla Firefox, Edge, Internet Explore, Safari.
+
+Structure of a Web Application :
+
+1) Client Side(FrontEnd) : end user's machine
+2) Server Side(Backend) : 
+3) Database : 
+
+Uniform Resource Locator(URL) : 
+
+https://www.paytm.com ->
+
+Protocol://host:port/path
+
+Protocol : 
+host : 
+port : TCP/IP port, default port -> 80 is assumed.
+path : "/" -> "WEBROOT"
+
+
+ex : https://www.youtube.com/search?="chiranjeevi%20movies"
+
+Protocols : 
+1) HTTP(Hypertext transfer protocol) -> for web communication :
+    1) text -> "Vinay"
+    2) Graphic
+    3) Image -> 
+    4) Video -> 
+    5) Other multimedia files
+
+2) HTTP vs HTTPS : 
+    1) HTTP : text based protocol.
+    2) HTTPS : Hypertext transfer protocol over Secured Socket Layer.
+               Encrypted.
+               SSL(Secured Socket Layer) protocol.
+            ex : 
+              Username -> Vinay -> 2298125 -> Vinay
+              Password -> 123 -> !@# -> 123
+
+3) Request/Response Protocol :
+    1) HTTP Request : client -> Server
+    2) HTTP Response : Server -> Client
+
+    HTTP Request Types : 
+        1) GET Method -> basic request call
+        2) POST Method -> Registration {body} username, password, email, phone number
+        3) UPDATE Method -> {body} image
+        4) DELETE Method -> deletion of account
+
+    HTTP Responses : 
+
+        Status Codes        Title                   Description
+
+        1xx(100-199)        Information             
+                            Responses
+
+        2xx(200-299)        Sccuess                 
+        ex : 200
+
+        3xx(300-399)        Redirection    
+
+        4xx(400-499)        Client Errors  
+        ex : 403, 404
+
+        5xx(500-599)        Server Errors 
+
+
+4) MIME(Multi-purpose Internet Mail Extensions) :
+
+    1) text
+        ex : text/plain
+             text/HTML
+             text/css
+
+    2) Image
+        ex : image/png
+             image/jpeg
+             image/gif
+
+
+
+
+
+
+
+
+
+
+
+
+
