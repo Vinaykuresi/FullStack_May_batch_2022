@@ -1,0 +1,84 @@
+class Employee{
+  constructor(name, age, qualification){
+    this.name = name;
+    this.age = age;
+    this.qualification = qualification;
+  }
+
+  getEmployee(){
+    console.log(this.name, this.age, this.qualification)
+  }
+}
+
+var geetha = new Employee("Geetha", "23", "M.C.A")
+console.log(geetha.qualification)
+console.log(geetha.getEmployee())
+
+class Organization extends Employee {
+  constructor(orgName, orgStrength, orgDomain){
+    super("Geetha", "23", "M.C.A");
+    this.orgName = orgName;
+    this.orgName = orgStrength;
+    this.orgDomain = orgDomain;
+  }
+
+  getOrganization(){
+    console.log(this.orgName, this.orgName, this.orgDomain)
+  }
+}
+
+var garuda = new Organization("Garuda", "2", "Software Consultancy");
+
+console.log(garuda.orgDomain);
+console.log(garuda.getOrganization());
+console.log(garuda.name, garuda.qualification)
+
+
+class Employee{
+  constructor(name, age, qualification){
+    this.name = name;
+    this.age = age;
+    this.qualification = qualification;
+  }
+
+  static display(){
+    console.log("This class displays the Employee Information")
+  }
+
+    static About(){
+      this.display()
+      console.log("Here employees can register their data")
+  }
+
+  getEmployee(){
+    // this.display()
+    console.log(this.name, this.age, this.qualification)
+  }
+}
+
+var geetha = new Employee("Geetha", "23", "M.C.A")
+// console.log(geetha.qualification)
+console.log(geetha.getEmployee())
+// console.log(Employee.display())
+console.log(Employee.About())
+
+class Organization extends Employee {
+  constructor(orgName, orgStrength, orgDomain){
+    super("Geetha", "23", "M.C.A");
+    this.orgName = orgName;
+    this.orgName = orgStrength;
+    this.orgDomain = orgDomain;
+  }
+
+  getOrganization(){
+    console.log(this.orgName, this.orgName, this.orgDomain)
+  }
+}
+
+var garuda = new Organization("Garuda", "2", "Software Consultancy");
+
+// console.log(garuda.orgDomain);
+// console.log(garuda.getOrganization());
+// console.log(garuda.name, garuda.qualification)
+
+
