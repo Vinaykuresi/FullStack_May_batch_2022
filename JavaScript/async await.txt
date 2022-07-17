@@ -1,0 +1,12 @@
+function timeout(ms) {
+    return new Promise(resolve =>   
+               setTimeout(resolve(console.log(2)), ms));
+}
+
+async function main(){
+  console.log(1);
+  await timeout(1000);
+  console.log(3);
+}
+
+main();

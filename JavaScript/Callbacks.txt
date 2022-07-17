@@ -1,0 +1,15 @@
+function greeting(name) {
+  alert('Hello ' + name);
+}
+
+function processUserInput(callback, name) {
+  callback(name);
+}
+
+function wish(func) {
+  var name = prompt('Please enter your name.');
+  func(greeting, name);
+  console.log("Happy birthday : ", name);
+}
+
+wish(processUserInput);
